@@ -46,6 +46,10 @@ Below are potential uses for this network:
 * Repeat this step on laptop2, pull up Terminal and enter "ping 192.168.0.2"
 * If the connection is successful the replies will not stop running, to stop the application hit control c
 
+5. Set up the Webserver on Laptop1
+* Using laptop 1, open the MAMP application, select Nginx
+
+
 
 ### Frequently Asked Questions 
 

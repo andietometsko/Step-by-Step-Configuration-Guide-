@@ -66,6 +66,15 @@ Below are potential uses for this network:
 * Connect a serial console cable from the router to one of the networked laptops
 * Next, we need to configure the default gateway on each LAN on the router
 * Input two IPs addresses, one for each LAN. The first IP is 192.168.0.1 with a subnet mask 255.255.255.192 this is the deafult gateway for the LAN we configured. The second LANs IP address is 172.16.0.1 with a subnet mask 255.255.255.0, this is the default gateway for our second LAN
+* Using the networked laptop that has the serial console cable plugged in,
+   Open Terminal to input the following commands:
+  1. router enable - allowing changes to be made in EXEC mode
+  2. configure terminal - this should be input after Router#
+  3. hostname router01
+  4. interface gigabitEthernet 0/0
+  5. ip address 192.168.0.1 255.255.255.192
+  6. description ##to switch 01## - to show the connection we are creating from the router to switch
+  7. 
 
 ### Frequently Asked Questions 
 

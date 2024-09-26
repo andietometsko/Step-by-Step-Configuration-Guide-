@@ -112,12 +112,11 @@ Throughout this project, I had the opportunity to work on the configuration and 
 
 ##### Challenges Encountered 
 
-
-
+The challenges we faced while building this network primarily stemmed from configuring the DNS server. We had trouble getting our "Welcome to Capstone Consulting" message to appear. We were able to combat this issue by reviewing all configurations and then disabling our firewall. It turned out that it was the firewall interfering with our server. Our team worked very well together and were able to get through any problems that we encountered efficiently. Most of the challenges with this project that I encountered were personal. I feel I now know what I need to do differently to ensure my success in upcoming projects. For me, that means taking detailed notes in class and during the lab. I believe one of the most important things I need to do in the future is work with and collaborate with my peers when studying and for questions I have about any projects. This also means scheduling office hours if I ever feel myself not fully grasping a concept or if I am overwhelmed by the material. 
 
 ##### New Skills and Insights 
 
-I have gained a 
+I have gained a plethora of new skills while going through this lab and project. Before starting this class, I knew little to nothing about building a network or how we accessed the internet or web pages. After this experience, I can say I know how to configure a DNS and web server. In addition, I can set up my own network using physical hardware. Through this lab I feel that I learned a lot of new information very quickly and was able to get a solid foundation into my understanding of networking. 
 
 
 ##### Areas for Improvement 

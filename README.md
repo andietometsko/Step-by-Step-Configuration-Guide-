@@ -18,15 +18,18 @@ Below are potential uses for this network:
 1. Collect Cisco physical hardware and other system devices 
 * Cisco catalyst 3750 series 24-port switch (WS-C3750-25TS-S)
 * Cisco 2911/K9 Router
-* Six ethernet cables
-* Four USB C adapters
-* Four networked laptops
-* Download and install NAMO and MAMP (not MAMP Pro) software onto each of the networked laptops
+* Four ethernet cables
+* Two USB C adapters
+* Two networked laptops
+* Download and install NAMO and MAMP (not MAMP Pro) software onto each of the networked laptops as well as Terminal 
 
 2. Configure the physical hardware 
 * Attach an ethernet cable from the router to the switch, by plugging in the cable to the ethernet ports
 * Turn on the ethernet switch. Note, it may take 2-3 mins for the Cisco devices to start up
-* 
+* From the switch take 2 ethernet cables and plug them into two ports
+* Attach the two USB C addapters to the other end of the ethernet cables and plug each of those cables into the networked laptops 
+
+3. 
 
 
 ### Frequently Asked Questions 
@@ -36,6 +39,9 @@ Below are potential uses for this network:
 Throughout this project, I had the opportunity to work on the configuration and implementation of a basic network using both virtual and physical networking tools. This process was extremely beneficial to me, I enhanced my technical abilities through hands-on learning and by doing this, developed a deeper understanding of how different network components interact. 
 
 ##### Challenges Encountered 
+
+
+
 
 ##### New Skills and Insights 
 

@@ -23,6 +23,7 @@ Below are potential uses for this network:
 * Four ethernet cables
 * Two USB C adapters
 * Two networked laptops
+* One serial console cable
 * Download and install NAMO and MAMP (not MAMP Pro) software onto each of the networked laptops as well as Terminal 
 
 2. Configure the physical hardware 
@@ -59,6 +60,12 @@ Below are potential uses for this network:
 * Assign IP address to the MAMP server 192.168.0.2, the address of laptop1. This was the DNS server would send requests for capstoneconsulting.com to that IP
 * In laptop1 go to webserver device System Settings, 'Network', 'Configuration Details', go to DNS servers and if there are IPs currently there, make sure to delete and clear them, now input the laptop2 IP address 192.168.0.3
 * What we did ensure that all requests for capstoneconsulting.com will go through our DNS server, which will then translate the domain name into the webservers IP address that directs the browser to the webpage hosted on that IP address
+
+7. Connect the network to the router
+* Check that the two ethernet cables from the switch are plugged into ports g0/0 and g0/1
+* Connect a serial console cable from the router to one of the networked laptops
+* Next, we need to configure the default gateway on each LAN on the router
+* Input two IPs addresses, one for each LAN. The first IP is 192.168.0.1 with a subnet mask 255.255.255.192 this is the deafult gateway for the LAN we configured. The second LANs IP address is 172.16.0.1 with a subnet mask 255.255.255.0, this is the default gateway for our second LAN
 
 ### Frequently Asked Questions 
 

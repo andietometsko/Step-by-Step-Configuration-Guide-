@@ -10,7 +10,7 @@ This system can be used in a variety of practical ways within IT and systems adm
 
 Below are potential uses for this network:
 1. Small Business Network Setup: This design can connect multiple LANs in small to medium-sized businesses by using separate networks for departments such as HR, Marketing, or Finance.
-2. LMU: Universities use a LAN network for students and staff to communicate with different networks on campus, wheather that is from the classroom, dorms or office buildings. 
+2. LMU: Universities use a LAN network for students and staff to communicate with different networks on campus, whether that is from the classroom, dorms, or office buildings. 
 3. Internal Company Network for Web Hosting: This system can be used to host internal websites that employees need access to for daily operations. 
 4. Testing for Application Development: Developers can use this network to simulate real-world scenarios where applications are hosted on DNS and web servers that need to be tested in a controlled LAN environment. 
 5. Network Troubleshooting and Cybersecurity Practice: This network can be used as a safe environment for security testers to simulate attacks, identify vulnerabilities, and test security configurations.
@@ -37,27 +37,27 @@ Below are potential uses for this network:
 * First we will configure an IP on laptop1, go to 'System Settings', 'Network','Other Services' then select USB 10/100/1000 LAN, pull up the 'TCP/IP' tab then 'Configure' IPv4 selecting the 'Manually' option
 * Assign and enter the IP 192.168.0.2 and the subnet mask 255.255.255.192
 * Next assign the default gateway by selecting 'Router' and assign the IP of 192.168.0.1 this will ensure that our LANs can be connected across the network 
-* Next repeat a similar step with laptop2, go to 'System Settings', 'Network','Other Services' then select USB 10/100/1000 LAN, pull up the 'TCP/IP' tab then 'Configure' IPv4 selecting the 'Manually' option
+* Next repeat a similar step with laptop2, go to 'System Settings', 'Network','Other Services' then select USB 10/100/1000 LAN, pull up the 'TCP/IP' tab then 'Configure' IPv4 select the 'Manually' option
 * Assign and enter the IP 192.168.0.3 and the subnet mask 255.255.255.192
 * Next assign the default gateway by selecting 'Router' and assign the IP of 192.168.0.1
 
 4. Ensure Conectivity between devices
 * In laptop1 pull up the Terminal application, and enter "ping 192.168.0.3"
-* If the laptop can successfully  communicate with the others we will recieve a reply from the IP address and a 0% loss
+* If the laptop can successfully  communicate with the others we will receive a reply from the IP address and a 0% loss
 * Repeat this step on laptop2, pull up Terminal and enter "ping 192.168.0.2"
 * If the connection is successful the replies will not stop running, to stop the application hit control c
 
 5. Set up the Webserver on Laptop1
-* Using laptop 1, open the MAMP application, select Nginx, go into prefrences and select port to edit the Nginx port to 80
+* Using laptop 1, open the MAMP application, select Nginx, go into preferences and select the port to edit the Nginx port to 80
 * Start running the server by hitting the start button
-* Next, we want to create an index.html do this by opening the MAMP application, click htdocs then index.html
-* Open TextEdit application and select the same index.html file and write "Welcome to Capstone Consulting"
+* Next, we want to create an index.html do this by opening the MAMP application, clicking htdocs then index.html
+* Open TextEdit application select the same index.html file and write "Welcome to Capstone Consulting"
 * Now to test our page, laptop2 should search HTTP:/192.168.0.2 into their browser and ensure the message we put in TextEdit appears
 
 6. Set up the DNS server 
 * The DNS, or domain name system server will translate domain names into IP addresses, this allows us to look up a more human-friendly domain instead of an IP address
-* Taking laptop2, open the NAMO application, create a new host by hitting the + and add the new host name by entering capstoneconsulting.com
-* Assign IP address to the MAMP server 192.168.0.2, the address of laptop1. This was the DNS server would send requests for capstoneconsulting.com to that IP
+* Taking laptop2, open the NAMO application, create a new host by hitting the +, and add the new hostname by entering capstoneconsulting.com
+* Assign IP address to the MAMP server 192.168.0.2, the address of laptop1. This was the DNS server that would send requests for capstoneconsulting.com to that IP
 * In laptop1 go to webserver device System Settings, 'Network', 'Configuration Details', go to DNS servers and if there are IPs currently there, make sure to delete and clear them, now input the laptop2 IP address 192.168.0.3
 * What we did ensure that all requests for capstoneconsulting.com will go through our DNS server, which will then translate the domain name into the webservers IP address that directs the browser to the webpage hosted on that IP address
 
@@ -76,11 +76,35 @@ Below are potential uses for this network:
   6. description ##to switch 01## - to show the connection we are creating from the router to switch
   7. no shutdown - this turns port status on
   8. exit - to leave this configuration
-  9. wr - will write this configuration into the systems memory
-  10. show startup-config - confirm that this configuration has been perminantly saved
+  9. wr - will write this configuration into the system's memory
+  10. show startup-config - confirm that this configuration has been permanently saved
 * Repeat this process on the other LANs IP
 
+8. Confirm connectivity to the other LAN
+* Now that our router is configured and we have assigned a default gateway we need to ping the other LAN
+* Open terminal in laptop1 and ping 172.16.0.2, if the ping replies our configuration was successful 
+
 ### Frequently Asked Questions 
+
+1. Laptop1 cannot communicate with Laptop2?
+* Check connectivity by pinging the other laptop through the IP address
+* If there is no response, ensure there are no typos, or missing, IP address assignments and subnet masks
+* Check that ethernet cables are plugged securely and that the switch is on
+
+2. Is the firewall interfering with my webpage?
+* When configuring this network it is possible that the firewall can interfere with your DNS and webserver
+* When creating and utilizing this network temporarily disable all firewalls
+
+3. Laptop cannot communicate across the network to a different LAN?
+* It is most likely that there is a missing default gateway
+* Check that all configurations of the router are correct
+
+4. How do I expand this network?
+* Follow the steps outlined with a new network by assigning new IPs and a default gateway to the LAN
+
+5. How can I practice building this network if I don't have the physical hardware?
+* The Cisco packet tracer application and go through the online simulation to become familiar with the configurations
+* This way you can also ensure that the devices you are trying to connect will work and respond to each other before you need to incorporate it into real-world application 
 
 ### Retrospective Reflection 
 
@@ -92,6 +116,9 @@ Throughout this project, I had the opportunity to work on the configuration and 
 
 
 ##### New Skills and Insights 
+
+I have gained a 
+
 
 ##### Areas for Improvement 
 

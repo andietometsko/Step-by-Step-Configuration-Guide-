@@ -40,6 +40,12 @@ Below are potential uses for this network:
 * Assign and enter the IP 192.168.0.3 and the subnet mask 255.255.255.192
 * Next assign the default gateway by selecting 'Router' and assign the IP of 192.168.0.1
 
+4. Ensure Conectivity between devices
+* In laptop1 pull up the Terminal application, and enter "ping 192.168.0.3"
+* If the laptop can successfully  communicate with the others we will recieve a reply from the IP address and a 0% loss
+* Repeat this step on laptop2, pull up Terminal and enter "ping 192.168.0.2"
+* If the connection is successful the replies will not stop running, to stop the application hit control c
+
 
 ### Frequently Asked Questions 
 

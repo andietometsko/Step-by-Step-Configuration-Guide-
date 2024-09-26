@@ -74,7 +74,11 @@ Below are potential uses for this network:
   4. interface gigabitEthernet 0/0
   5. ip address 192.168.0.1 255.255.255.192
   6. description ##to switch 01## - to show the connection we are creating from the router to switch
-  7. 
+  7. no shutdown - this turns port status on
+  8. exit - to leave this configuration
+  9. wr - will write this configuration into the systems memory
+  10. show startup-config - confirm that this configuration has been perminantly saved
+* Repeat this process on the other LANs IP
 
 ### Frequently Asked Questions 
 

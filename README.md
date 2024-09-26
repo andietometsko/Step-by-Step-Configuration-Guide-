@@ -7,11 +7,13 @@ The following deliverables demonstrate how to design, simulate, and implement a 
 ### Use Cases for the System
 
 This system can be used in a variety of practical ways within IT and systems administration. 
+
 Below are potential uses for this network:
 1. Small Business Network Setup: This design can connect multiple LANs in small to medium-sized businesses by using separate networks for departments such as HR, Marketing, or Finance.
-2. Internal Company Network for Web Hosting: This system can be used to host internal websites that employees need access to for daily operations. 
-3. Testing for Application Development: Developers can use this network to simulate real-world scenarios where applications are hosted on DNS and web servers that need to be tested in a controlled LAN environment. 
-4. Network Troubleshooting and Cybersecurity Practice: This network can be used as a safe environment for security testers to simulate attacks, identify vulnerabilities, and test security configurations.
+2. LMU: Universities use a LAN network for students and staff to communicate with different networks on campus, wheather that is from the classroom, dorms or office buildings. 
+3. Internal Company Network for Web Hosting: This system can be used to host internal websites that employees need access to for daily operations. 
+4. Testing for Application Development: Developers can use this network to simulate real-world scenarios where applications are hosted on DNS and web servers that need to be tested in a controlled LAN environment. 
+5. Network Troubleshooting and Cybersecurity Practice: This network can be used as a safe environment for security testers to simulate attacks, identify vulnerabilities, and test security configurations.
 
 ### Step-by-Step Configuration 
 
@@ -27,9 +29,16 @@ Below are potential uses for this network:
 * Attach an ethernet cable from the router to the switch, by plugging in the cable to the ethernet ports
 * Turn on the ethernet switch. Note, it may take 2-3 mins for the Cisco devices to start up
 * From the switch take 2 ethernet cables and plug them into two ports
-* Attach the two USB C addapters to the other end of the ethernet cables and plug each of those cables into the networked laptops 
+* Attach the two USB C addapters to the other end of the ethernet cables and plug each of those cables into the networked laptops
+  
 
-3. 
+3. Assign IPs to networked laptops
+* First we will configure an IP on laptop1, go to 'System Settings', 'Network','Other Services' then select USB 10/100/1000 LAN, pull up the 'TCP/IP' tab then 'Configure' IPv4 selecting the 'Manually' option
+* Assign and enter the IP 192.168.0.2 and the subnet mask 255.255.255.192
+* Next assign the default gateway by selecting 'Router' and assign the IP of 192.168.0.1 this will ensure that our LANs can be connected across the network 
+* Next repeat a similar step with laptop2, go to 'System Settings', 'Network','Other Services' then select USB 10/100/1000 LAN, pull up the 'TCP/IP' tab then 'Configure' IPv4 selecting the 'Manually' option
+* Assign and enter the IP 192.168.0.3 and the subnet mask 255.255.255.192
+* Next assign the default gateway by selecting 'Router' and assign the IP of 192.168.0.1
 
 
 ### Frequently Asked Questions 

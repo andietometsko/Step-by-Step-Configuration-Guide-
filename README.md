@@ -53,7 +53,12 @@ Below are potential uses for this network:
 * Open TextEdit application and select the same index.html file and write "Welcome to Capstone Consulting"
 * Now to test our page, laptop2 should search HTTP:/192.168.0.2 into their browser and ensure the message we put in TextEdit appears
 
-
+6. Set up the DNS server 
+* The DNS, or domain name system server will translate domain names into IP addresses, this allows us to look up a more human-friendly domain instead of an IP address
+* Taking laptop2, open the NAMO application, create a new host by hitting the + and add the new host name by entering capstoneconsulting.com
+* Assign IP address to the MAMP server 192.168.0.2, the address of laptop1. This was the DNS server would send requests for capstoneconsulting.com to that IP
+* In laptop1 go to webserver device System Settings, 'Network', 'Configuration Details', go to DNS servers and if there are IPs currently there, make sure to delete and clear them, now input the laptop2 IP address 192.168.0.3
+* What we did ensure that all requests for capstoneconsulting.com will go through our DNS server, which will then translate the domain name into the webservers IP address that directs the browser to the webpage hosted on that IP address
 
 ### Frequently Asked Questions 
 

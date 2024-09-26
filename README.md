@@ -47,7 +47,11 @@ Below are potential uses for this network:
 * If the connection is successful the replies will not stop running, to stop the application hit control c
 
 5. Set up the Webserver on Laptop1
-* Using laptop 1, open the MAMP application, select Nginx
+* Using laptop 1, open the MAMP application, select Nginx, go into prefrences and select port to edit the Nginx port to 80
+* Start running the server by hitting the start button
+* Next, we want to create an index.html do this by opening the MAMP application, click htdocs then index.html
+* Open TextEdit application and select the same index.html file and write "Welcome to Capstone Consulting"
+* Now to test our page, laptop2 should search HTTP:/192.168.0.2 into their browser and ensure the message we put in TextEdit appears
 
 
 
